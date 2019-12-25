@@ -33,16 +33,10 @@ RUN \
  echo "**** install software ****" && \
  mkdir -p \
 	/var/www/html/ && \
- if [ -z ${TT_RSS_VERSION+x} ]; then \
- 	TT_RSS_VERSION=$(git ls-remote --tags https://git.tt-rss.org/fox/tt-rss.git \
-	| sort -t '/' -k 3 -V \
-	| grep -Ev '{}|-' \
-	| awk '/./{line=$0} END{print line}' \
-	| awk -F / '{print $3}'); \
- fi && \
+# get latest master version
  curl -o \
 	/tmp/ttrss.tar.gz -L \
-	"https://git.tt-rss.org/git/tt-rss/archive/${TT_RSS_VERSION}.tar.gz" && \
+	"https://git.tt-rss.org/fox/tt-rss/archive/master.tar.gz" && \
  tar xf \
  /tmp/ttrss.tar.gz -C \
 	/var/www/html/ --strip-components=1 && \
