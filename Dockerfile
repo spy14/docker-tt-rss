@@ -14,6 +14,7 @@ RUN \
 	git \
 	grep \
 	php7-apcu \
+	php7-ctype \
 	php7-curl \
 	php7-dom \
 	php7-gd \
