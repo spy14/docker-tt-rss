@@ -1,3 +1,16 @@
+## Based on the container from linuxserver/docker-tt-rss
+
+Changes:
+
+* pull latest master ttrss when creating container instead of a tag from 5 years ago(unfortunately the developer doesn't tag ttrss anymore)
+* add crontab based update script, the daemon wasn't working(but I haven't yet removed it)
+* add php7-ctype(new requirement?)
+
+Rest remains unchanged.
+
+## Original info below:
+
+
 *** IMPORTANT NOTICE ***  
 THIS IMAGE HAS BEEN DEPRECATED  
 We are no longer able to ingest tarballs from upstream repo  
