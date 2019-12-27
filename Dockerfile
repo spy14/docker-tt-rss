@@ -4,8 +4,8 @@ FROM lsiobase/nginx:3.10
 ARG BUILD_DATE
 ARG VERSION
 ARG TT_RSS_VERSION
-LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
-LABEL maintainer="sparklyballs"
+LABEL build_version="spy14/docker-tt-rss version:1.2.1 Build-date:- ${BUILD_DATE}"
+LABEL maintainer="spy14"
 
 RUN \
  echo "**** install packages ****" && \

@@ -4,7 +4,7 @@ Changes:
 
 * pull latest master ttrss when creating container instead of a tag from 5 years ago(unfortunately the developer doesn't tag ttrss anymore)
 * add crontab based update script to run every 5 mins(the daemon wasn't working)
-* add php7-ctype(new requirement inthe last 5 years?)
+* add php7-ctype(new requirement in the last 5 years?)
 
 Rest remains unchanged.
 
